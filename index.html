@@ -24,26 +24,53 @@
 	<![endif]-->
 </head>
 <body>
-	<header>
-		<h1>I am a designer that thinks in code.</h1>
-		<nav>
-			<ul>
-				<li>item one</li>
-				<li>item two</li>
-				<li>item three</li>
-				<li>item four</li>
-			</ul>
-		</nav>
-	</header>
-	<footer>
-		<ul>
-			<li class="ss-icon ss-social-circle">twitter</li>
-			<li class="ss-icon ss-social-circle">linkedin</li>
-			<li class="ss-icon ss-social-circle">dribbble</li>
-			<li class="ss-icon ss-social-circle">octocat</li>
-			<li class="ss-icon ss-social-circle">tumblr</li>
+	<nav>
+		<ul class="row">
+			<!-- <li class="pull_left ss-icon ss-standard">Info</li>
+			<li class="pull_left ss-icon ss-standard">Work</li> -->
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
 		</ul>
+	</nav>
+	<header class="row">
+		<h1 class="col12 col-inner">I am a designer who thinks in code.</h1>
+	</header>
+
+	<section class="row block">
+		<article class="col4 pull_left col-inner">
+			<h1 class="border-bottom row">Philosophy</h1>
+			<p>Form follows function, visual elements should be applied with care and purpose. I believe in <a href="http://adactio.com/articles/5156/" title="Jeremy Keith Adactio journal entry 5156">one web</a> and advocate Responsive Web Design. I believe that open web standards are the future of the web; despite with Zuck says.</p>
+		</article>
+		<article class="col4 pull_left col-inner">
+			<h1 class="border-bottom row">Process</h1>
+			<p>Identify. Question. Plan. Research. Analyze. Prototype. Test. Iterate. Refine. Deploy. Repeat.</p>
+		</article>
+		<article class="col4 pull_left col-inner">
+			<h1 class="border-bottom row">Meta</h1>
+			<p>I live in an old house in Denver, CO with my wife. I play outdoors, admire Ron Swanson and enjoy a good libation from time to time.</p>
+		</article>
+	</section>
+
+	<section class="row block">
+		<article class="col12 col-inner">
+			<h1 class="row" style="text-align: center;">check back tomorrow</h1>
+		</article>
+	</section>
+
+	<footer>
+		<ul class="row">
+			<!-- <li class="pull_left ss-icon ss-standard">Info</li>
+			<li class="pull_left ss-icon ss-standard">Work</li> -->
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
+			<li class="pull_left ss-icon ss-standard">navigateup</li>
+		</ul>
+		<small>&copy;2012 Chase Courington <span>Handcrafted in Denver, CO</span></small>
 	</footer>
-	<h1>the end</h1>
 </body>
+<script src="http://zeptojs.com/zepto.min.js"></script>
 </html>
