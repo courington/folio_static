@@ -1,0 +1,88 @@
+@mixin padding {
+	padding: .25em;
+}
+@mixin aside {
+	@include padding;
+	background: darken($white, 15%);
+	border-radius: 3px;
+	border: 1px solid darken($white, 40%);
+}
+html {
+	@include mainFont;
+}
+body {
+	overflow-x: hidden;
+}
+.wrapper {
+	background: $light-grey;
+	color: $dark-grey;
+}
+[class*="pull"] {
+	display: inline-block;
+}
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float:right;
+}
+//GRID
+.row {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	@include padding;
+}
+[class*="col"] {
+	display: inline-block;
+}
+//8 Column Grid
+$cols : (100% / 8);
+.col8 {
+	width: ($cols * 8);
+}
+.col7 {
+	width: ($cols * 7);
+}
+.col6 {
+	width: ($cols * 6);
+}
+.col5 {
+	width: ($cols * 5);
+}
+.col4 {
+	width: ($cols * 4);
+}
+.col3 {
+	width: ($cols * 3);
+}
+.col2 {
+	width: ($cols * 2);
+}
+.col1 {
+	width: ($cols * 1);
+}
+.offset8 {
+	margin-left: ($cols * 8);
+}
+.offset7 {
+	margin-left: ($cols * 7);
+}
+.offset6 {
+	margin-left: ($cols * 6);
+}
+.offset5 {
+	margin-left: ($cols * 5);
+}
+.offset4 {
+	margin-left: ($cols * 4);
+}
+.offset3 {
+	margin-left: ($cols * 3);
+}
+.offset2 {
+	margin-left: ($cols * 2);
+}
+.offset1 {
+	margin-left: ($cols * 1);
+}

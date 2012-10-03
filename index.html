@@ -1,68 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
-	<link href="assets/styles/main.css" media="all" rel="stylesheet" type="text/css">
-	<link href="assets/webfonts/ss-standard/webfonts/ss-standard.css" media="all" rel="stylesheet" type="text/css">
-	<link href="assets/webfonts/ss-social/webfonts/ss-social.css" media="all" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+    <title>Chase Courington - Mobile Web</title>
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+	<meta name="viewport" content="target-densitydpi=medium-dpi">
+
+	<link href="assets/styles/compiled/index.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/webfonts/ss-standard.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/webfonts/ss-social.css" media="all" rel="stylesheet" type="text/css">
+
+  	<script type="text/javascript" src="assets/webfonts/ss-standard.js"></script>
+  	<script type="text/javascript" src="assets/webfonts/ss-social.js"></script>
+  	<script type="text/javascript" src="assets/scripts/modernizr.custom.82375.js"></script>
+  	<script type="text/javascript" src="assets/scripts/hide-address-bar.js"></script>
+	<script type="text/javascript" src="assets/scripts/offCanvas.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 	<script type="text/javascript">
-  		WebFontConfig = {
-    		google: { families: [ 'Goudy+Bookletter+1911::latin' ] }
-  		};
-  		(function() {
-    		var wf = document.createElement('script');
-    		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      		'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    		wf.type = 'text/javascript';
-    		wf.async = 'true';
-    		var s = document.getElementsByTagName('script')[0];
-    		s.parentNode.insertBefore(wf, s);
-  		})(); </script>
-  	<script type="text/javascript" src="assets/webfonts/ss-standard/webfonts/ss-standard.js"></script>
-  	<script type="text/javascript" src="assets/webfonts/ss-social/webfonts/ss-social.js"></script>
-  	<!--[if lt IE 9]>
-		<script src="dist/html5shiv.js"></script>
-	<![endif]-->
+		$(document).ready(function(){
+			offCanvas();
+		})
+	</script>
 </head>
 <body>
+
+<header class="row">
 	<nav>
-		<ul class="row">
-			<!-- <li class="pull_left ss-icon ss-standard">Info</li>
-			<li class="pull_left ss-icon ss-standard">Work</li> -->
+		<a href="#navigation" class="ss-standard ss-icon pull_left menu-button">rows</a>
+		<ul>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
 		</ul>
 	</nav>
-	<header class="row">
-		<h1 class="col12 col-inner">I am a designer who thinks in code.</h1>
-	</header>
-
-	<section class="row block">
-		<article class="col4 pull_left col-inner">
-			<h1 class="border-bottom row">Philosophy</h1>
-			<p>Form follows function, visual elements should be applied with care and purpose. I believe in <a href="http://adactio.com/articles/5156/" title="Jeremy Keith Adactio journal entry 5156">one web</a> and advocate Responsive Web Design. I believe that open web standards are the future of the web; despite with Zuck says.</p>
-		</article>
-		<article class="col4 pull_left col-inner">
-			<h1 class="border-bottom row">Process</h1>
-			<p>Identify. Question. Plan. Research. Analyze. Prototype. Test. Iterate. Refine. Deploy. Repeat.</p>
-		</article>
-		<article class="col4 pull_left col-inner">
-			<h1 class="border-bottom row">Meta</h1>
-			<p>I live in an old house in Denver, CO with my wife. I play outdoors, admire Ron Swanson and enjoy a good libation from time to time.</p>
+</header>
+<!-- OFF CANVAS NAV -->
+<aside>
+	<nav class="row" role="navigation">
+		<ul>
+			<li class="border-bottom"><a href="#about">About Me</a></li>
+			<li class="border-bottom"><a href="#resume">Resume</a></li>
+			<li><a href="#work">Work Samples</a>
+				<ul>
+					<li class="border-bottom"><a href="#work-1">Slinggit</a></li>
+					<li class="border-bottom"><a href="#work-2">Pixorial</a></li>
+					<li class="border-bottom"><a href="#work-3">Air Supremacy</a></li>
+					<li class="border-bottom"><a href="#work-4">Streamline</a></li>
+					<li class="border-bottom"><a href="#work-5">SimplBrew</a></li>
+					<li class="border-bottom"><a href="#work-6">Nomabi</a></li>
+				</ul>
+			</li>
+			<li class="border-bottom"><a href="#social">Social</a></li>
+			<li class="border-bottom"><a href="#blog">Blog</a></li>
+			<li class="border-bottom"><a href="#contact">Contact</a></li>
+		</ul>	
+	</nav>
+</aside>
+<!-- END OFF CANVAS NAV -->
+<!-- MAIN CONTENT WRAPPER -->
+<div class="wrapper" role="main">
+<!-- BEGIN ABOUT -->
+	<section class="row" id="about">
+		<header class="row">
+			<h1>I am a designer who thinks in code.</h1>
+		</header>
+		<figure class="col2 pull_right">
+			<img src="assets/images/portrait_aspenHike_240x320.jpg" height="auto" width="100%" title="Self Portrait of Chase hiking Conundrum Creek" alt="Self Portrait of Chase" />
+			<figcaption>
+				Hiking Conundrum Creek trail near Aspen.<span>August 2012</span>
+			</figcaption>
+		</figure>
+		<article class="col6 pull_left">
+			<p>I am a UX Designer living in Denver, CO who geeks out over web standards, accessibility and mobile technology. I wear many hats including researcher, tester, front end developer, visual designer and co-founder. I can be found exploring the rocky mountains, expanding my mind on <a href="http://www.coursera.com/" title="Coursera free online classes">Coursera</a>, enjoying a craft beer and relaxing with family and friends.</p>
+			<a href="#resume" title="My Resume">Resume</a>
 		</article>
 	</section>
+<!-- END ABOUT -->	
+<!-- BEGIN WORK -->
+	<section class="row" id="work">
+		<article id="work-1">
+			<h1 class="border-bottom">Slinggit</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>Co-Founder, UI/UX, HTML, SASS, jQuery, Rails</dd>
+				<dt>Dates:</dt>
+					<dd>April 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>Responsive web app designed with emphasis on speed and low footprint. iOS user interface. http://www.slinggit.com</dd>
+			</dl>
+		</article>
 
-	<section class="row block">
-		<article class="col12 col-inner">
-			<h1 class="row" style="text-align: center;">check back tomorrow</h1>
+		<article id="work-2">
+			<h1 class="border-bottom">Pixorial</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX, HTML, CSS/SASS, jQuery, Rails</dd>
+				<dt>Dates:</dt>
+					<dd>February 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>Design and Front End Development for a small startup building a cloud storage, video editing and sharing application. I do things like write/moderate usability tests, wireframe, design visual elements, build prototypes to test and write product HTML, CSS and JS.</dd>
+			</dl>
+		</article>
+
+		<article id="work-3">
+			<h1 class="border-bottom">Air Supremacy</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX, HTML, CSS, jQuery</dd>
+				<dt>Dates:</dt>
+					<dd>June 2012</dd>
+				<dt>Meta:</dt>
+					<dd>Work with Air Supremacy to move e-commerce hosting to Big Cartel platform and design 'mobile first' custom theme.</dd>
+			</dl>
+		</article>
+
+		<article id="work-4">
+			<h1 class="border-bottom">Streamline Engineering</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI, HTML, CSS, jQuery</dd>
+				<dt>Dates:</dt>
+					<dd>December 2011</dd>
+				<dt>Meta:</dt>
+					<dd>Work with Dominic Aiello to brand, design and develop the web pressence for his mechanical engineering consultancy, Streamline Engineering.</dd>
+			</dl>
+		</article>
+
+		<article id="work-5">
+			<h1 class="border-bottom">SimplBrew</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX</dd>
+				<dt>Dates:</dt>
+					<dd>November 2011 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>A mobile app for iOS and web, for recreational/novice homebrewers featuring simple ingredient lists, brew tracking, calendar and timer.</dd>
+			</dl>
+		</article>
+
+		<article id="work-6">
+			<h1 class="border-bottom">Nomabi</h1>
+			<ul class="row work-thumbnails">
+				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+			</ul>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX, HTML/HAML, SASS/CSS</dd>
+				<dt>Dates:</dt>
+					<dd>August 2012</dd>
+				<dt>Meta:</dt>
+					<dd>For an AT&amp;T Mobile Hackathon in Denver our team of 6 concepted an app that would allow designers/developers to connect in physical spaces to co-work. Originally designed as a native iOS app we rapidly built a responsive web app when we ran into issues with several of the apis in iOS. Used the FullContact, MapQuest, GitHub and At&amp;T apis.</dd>
+			</dl>
 		</article>
 	</section>
-
-	<footer>
-		<ul class="row">
-			<!-- <li class="pull_left ss-icon ss-standard">Info</li>
-			<li class="pull_left ss-icon ss-standard">Work</li> -->
+<!-- END WORK -->
+</div>
+<!-- END MAIN CONTENT WRAPPER -->
+	<footer class="row">
+		<ul>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
@@ -71,6 +195,6 @@
 		</ul>
 		<small>&copy;2012 Chase Courington <span>Handcrafted in Denver, CO</span></small>
 	</footer>
+
 </body>
-<script src="http://zeptojs.com/zepto.min.js"></script>
 </html>

@@ -1,0 +1,72 @@
+/*
+Syntax error: Undefined variable: "$dark-grey".
+        on line 6 of sass/nav.scss
+
+1: body > header > nav > a,
+2: body > header nav li[class*="pull_"],
+3: body > footer li[class*="pull_"] {
+4: 	margin: .222em 2.5% 0;
+5: 	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+6: 	color: $dark-grey;
+7: }
+8: 
+9: [role="navigation"] {
+10: 	li {
+11: 		ul {
+
+Backtrace:
+sass/nav.scss:6
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/variable.rb:49:in `_perform'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/node.rb:40:in `perform'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/engine.rb:299:in `_render'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/engine.rb:246:in `render'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:332:in `update_stylesheet'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:263:in `block (3 levels) in watch'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `[]'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `block in run_events'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `each'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `run_events'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:37:in `block (3 levels) in start!'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `each'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `block (2 levels) in start!'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `each'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `block in start!'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$dark-grey\".\A         on line 6 of sass/nav.scss\A \A 1: body > header > nav > a,\A 2: body > header nav li[class*=\"pull_\"],\A 3: body > footer li[class*=\"pull_\"] {\A 4: 	margin: .222em 2.5% 0;\A 5: 	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);\A 6: 	color: $dark-grey;\A 7: }\A 8: \A 9: [role=\"navigation\"] {\A 10: 	li {\A 11: 		ul {"; }

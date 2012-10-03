@@ -1,0 +1,13 @@
+#about {
+	figure {
+		max-width: 12em;
+		@include aside;
+		figcaption {
+			@include smallFont;
+			span {
+				display: block;
+				@include smallFont;
+			}
+		}
+	}
+}

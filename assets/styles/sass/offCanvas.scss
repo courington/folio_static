@@ -1,0 +1,42 @@
+[role="navigation"],
+[role="main"],
+[role="complementary"] {
+	-moz-transition: .2s all ease;	
+	-webkit-transition: .2s all ease;
+	transition: .2s all ease;			
+	width: 100%;
+	padding: 2.5%;
+}
+.js [role="navigation"] {	
+	margin-left: -100%;
+	float: left;
+}
+.js [role="main"] {
+	margin-left: 0;
+	float: left;
+}
+.js [role="complementary"] {	
+	margin-right: -200%;
+	float: left;		
+}
+.active-nav[role="navigation"] {	
+	margin-left: 0;	
+	width: auto;
+}
+.active-nav[role="main"]{
+	margin-right: -100%;
+}
+.active-nav [role="complementary"] {	
+	margin-right: -100%;
+	float: right;		
+}
+.active-sidebar [role="navigation"] {	
+	margin-left: -100%;
+}
+.active-sidebar [role="main"] {
+	margin-left: -90%;	
+}
+.active-sidebar [role="complementary"] {	
+	margin-left: 0;
+	width: 80%;	
+}

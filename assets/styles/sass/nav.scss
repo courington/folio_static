@@ -1,0 +1,19 @@
+body > header > nav > a,
+body > header nav li[class*="pull_"],
+body > footer li[class*="pull_"] {
+	margin: .222em 2.5% 0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+	color: $dark-grey;
+}
+
+[role="navigation"] {
+	li {
+		ul {
+			@include smallFont;
+			padding-left: $cols;
+		}
+	}
+	.border-bottom {
+		border-bottom: 1px solid $grey;
+	}
+}

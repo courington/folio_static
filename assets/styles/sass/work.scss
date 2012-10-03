@@ -1,0 +1,31 @@
+#work {
+	dl {
+		@include fontSize;
+	}
+	.work-thumbnails {
+		li {
+			margin: 0 2.125%;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0
+			}
+			img {
+				box-shadow: 0 2px 2px 1px rgba(0, 0, 10, .2);
+			}
+		}
+		.sml {
+			width: 15.2%;
+			max-width: 5.125em;
+		}
+		.med {
+			width: 29.2%;
+			max-width: 9.925em;
+		}
+		.lrg {
+			width: 47%;
+			max-width: 15.938em;
+		}
+	}
+}
