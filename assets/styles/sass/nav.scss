@@ -1,12 +1,41 @@
-body > header > nav > a,
-body > header nav li[class*="pull_"],
-body > footer li[class*="pull_"] {
+@mixin navBar {
 	margin: .222em 2.5% 0;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
 	color: $dark-grey;
 }
 
+@mixin navBarBack {
+	background: $grey;
+}
+
+body {
+	background: $dark-grey;
+	&> header {
+		@include navBarBack;
+		nav {
+			.menu-button,
+			li[class*="pull_"] {
+				@include navBar;
+			}
+		}
+	}
+	&> footer {
+		@include navBarBack;
+		a,
+		li[class*="pull_"] {
+			@include navBar;
+		}
+		small {
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
 [role="navigation"] {
+	background: $dark-grey;
+	color: $light-grey;
 	li {
 		ul {
 			@include smallFont;

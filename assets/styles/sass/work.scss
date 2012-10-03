@@ -1,4 +1,5 @@
 #work {
+	background: lighten($light-grey, 10%);
 	dl {
 		@include fontSize;
 	}
@@ -26,6 +27,10 @@
 		.lrg {
 			width: 47%;
 			max-width: 15.938em;
+		}
+		.ios {
+			width: 30%;
+			max-width: 8.375em;
 		}
 	}
 }

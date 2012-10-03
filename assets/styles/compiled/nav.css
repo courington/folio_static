@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$dark-grey".
-        on line 6 of sass/nav.scss
+        on line 12 of sass/nav.scss
 
-1: body > header > nav > a,
-2: body > header nav li[class*="pull_"],
-3: body > footer li[class*="pull_"] {
-4: 	margin: .222em 2.5% 0;
-5: 	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
-6: 	color: $dark-grey;
-7: }
-8: 
-9: [role="navigation"] {
-10: 	li {
-11: 		ul {
+7: @mixin navBarBack {
+8: 	background: $grey;
+9: }
+10: 
+11: body {
+12: 	background: $dark-grey;
+13: 	&> header {
+14: 		@include navBarBack;
+15: 		nav {
+16: 			.menu-button,
+17: 			li[class*="pull_"] {
 
 Backtrace:
-sass/nav.scss:6
+sass/nav.scss:12
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/variable.rb:49:in `_perform'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/node.rb:40:in `perform'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
@@ -69,4 +69,4 @@ sass/nav.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$dark-grey\".\A         on line 6 of sass/nav.scss\A \A 1: body > header > nav > a,\A 2: body > header nav li[class*=\"pull_\"],\A 3: body > footer li[class*=\"pull_\"] {\A 4: 	margin: .222em 2.5% 0;\A 5: 	text-shadow: 0 1px 0 rgba(255, 255, 255, .25);\A 6: 	color: $dark-grey;\A 7: }\A 8: \A 9: [role=\"navigation\"] {\A 10: 	li {\A 11: 		ul {"; }
+  content: "Syntax error: Undefined variable: \"$dark-grey\".\A         on line 12 of sass/nav.scss\A \A 7: @mixin navBarBack {\A 8: 	background: $grey;\A 9: }\A 10: \A 11: body {\A 12: 	background: $dark-grey;\A 13: 	&> header {\A 14: 		@include navBarBack;\A 15: 		nav {\A 16: 			.menu-button,\A 17: 			li[class*=\"pull_\"] {"; }

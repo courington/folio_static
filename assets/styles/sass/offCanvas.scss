@@ -1,11 +1,11 @@
 [role="navigation"],
 [role="main"],
 [role="complementary"] {
-	-moz-transition: .2s all ease;	
-	-webkit-transition: .2s all ease;
-	transition: .2s all ease;			
+	//-moz-transition: .2s all ease;	
+	//-webkit-transition: .2s all ease;
+	//transition: .2s all ease;			
 	width: 100%;
-	padding: 2.5%;
+	//padding: .25em 2.5%;
 }
 .js [role="navigation"] {	
 	margin-left: -100%;
@@ -39,4 +39,7 @@
 .active-sidebar [role="complementary"] {	
 	margin-left: 0;
 	width: 80%;	
+}
+.hide {
+	display: none;
 }

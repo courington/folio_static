@@ -6,42 +6,38 @@
     <meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 	<meta name="viewport" content="target-densitydpi=medium-dpi">
+	<link id="page_favicon" href="assets/images/favicon_16x16.ico" rel="icon" type="image/x-icon">
 
 	<link href="assets/styles/compiled/index.css" media="all" rel="stylesheet" type="text/css">
 	<link href="assets/webfonts/ss-standard.css" media="all" rel="stylesheet" type="text/css">
 	<link href="assets/webfonts/ss-social.css" media="all" rel="stylesheet" type="text/css">
 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/modernizr.custom.82375.js"></script>
   	<script type="text/javascript" src="assets/webfonts/ss-standard.js"></script>
   	<script type="text/javascript" src="assets/webfonts/ss-social.js"></script>
-  	<script type="text/javascript" src="assets/scripts/modernizr.custom.82375.js"></script>
-  	<script type="text/javascript" src="assets/scripts/hide-address-bar.js"></script>
 	<script type="text/javascript" src="assets/scripts/offCanvas.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			offCanvas();
-		})
-	</script>
 </head>
 <body>
-
+<!-- TOP BAR -->
 <header class="row">
 	<nav>
 		<a href="#navigation" class="ss-standard ss-icon pull_left menu-button">rows</a>
 		<ul>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
-			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
+			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linkedin">linkedin</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
 		</ul>
 	</nav>
 </header>
+<!-- END TOP BAR -->
 <!-- OFF CANVAS NAV -->
 <aside>
 	<nav class="row" role="navigation">
 		<ul>
 			<li class="border-bottom"><a href="#about">About Me</a></li>
-			<li class="border-bottom"><a href="#resume">Resume</a></li>
+			<li class="border-bottom"><a href="#resume" class="showResume">Resume</a></li>
 			<li><a href="#work">Work Samples</a>
 				<ul>
 					<li class="border-bottom"><a href="#work-1">Slinggit</a></li>
@@ -49,10 +45,9 @@
 					<li class="border-bottom"><a href="#work-3">Air Supremacy</a></li>
 					<li class="border-bottom"><a href="#work-4">Streamline</a></li>
 					<li class="border-bottom"><a href="#work-5">SimplBrew</a></li>
-					<li class="border-bottom"><a href="#work-6">Nomabi</a></li>
+					<!-- <li class="border-bottom"><a href="#work-6">Hack Denver</a></li> -->
 				</ul>
 			</li>
-			<li class="border-bottom"><a href="#social">Social</a></li>
 			<li class="border-bottom"><a href="#blog">Blog</a></li>
 			<li class="border-bottom"><a href="#contact">Contact</a></li>
 		</ul>	
@@ -61,25 +56,103 @@
 <!-- END OFF CANVAS NAV -->
 <!-- MAIN CONTENT WRAPPER -->
 <div class="wrapper" role="main">
-<!-- BEGIN ABOUT -->
+<!-- ABOUT -->
 	<section class="row" id="about">
 		<header class="row">
 			<h1>I am a designer who thinks in code.</h1>
 		</header>
-		<figure class="col2 pull_right">
+		<!-- <figure class="col2 pull_right">
 			<img src="assets/images/portrait_aspenHike_240x320.jpg" height="auto" width="100%" title="Self Portrait of Chase hiking Conundrum Creek" alt="Self Portrait of Chase" />
 			<figcaption>
 				Hiking Conundrum Creek trail near Aspen.<span>August 2012</span>
 			</figcaption>
-		</figure>
-		<article class="col6 pull_left">
+		</figure> -->
+		<article class="col8 pull_left">
 			<p>I am a UX Designer living in Denver, CO who geeks out over web standards, accessibility and mobile technology. I wear many hats including researcher, tester, front end developer, visual designer and co-founder. I can be found exploring the rocky mountains, expanding my mind on <a href="http://www.coursera.com/" title="Coursera free online classes">Coursera</a>, enjoying a craft beer and relaxing with family and friends.</p>
-			<a href="#resume" title="My Resume">Resume</a>
 		</article>
 	</section>
-<!-- END ABOUT -->	
-<!-- BEGIN WORK -->
+<!-- END ABOUT -->
+<!-- RESUME -->
+	<section class="row" id="resume">
+		<h1>Resume</h1>
+		<header class="col4 pull_left vcard">
+			<hgroup>
+				<h1 class="fn">Chase Courington</h1>
+				<h2>UX/UI Design &amp; Development</h2>
+				<h3 class="adr region">Denver, CO</h3>
+			</hgroup>
+			<ul>
+				<li class="tel"><span class="ss-icon ss-standard">phone</span>303-330-5997</li>
+				<li><a href="http://twitter.com/chasecourington" title="twitter"><span class="ss-icon ss-social">twitter</span>@chasecourington</a></li>
+				<li><a href="mailto:get@chasecourington.com" title="email"><span class="ss-icon ss-social">email</span>get@chasecourington.com</a></li>
+				
+			</ul>
+		</header>
+		<article class="col4 pull_right">
+			<h1>Skills</h1>
+			<dl>
+				<dt>Web Development</dt>
+					<dd>HTML(5)<div class="status"><span class="col7"></span></div></dd>
+					<dd>CSS/SASS<div class="status"><span class="col7"></span></div></dd>
+					<dd>jQuery<div class="status"><span class="col3"></span></div></dd>
+					<dd>Javascript<div class="status"><span class="col2"></span></div></dd>
+					<dd>Rails<div class="status"><span class="col2"></span></div></dd>
+					<dd>PHP<div class="status"><span class="col1"></span></div></dd>
+				<dt>Design</dt>
+					<dd>Photoshop<div class="status"><span class="col7"></span></div></dd>
+					<dd>Illustrator<div class="status"><span class="col7"></span></div></dd>
+					<dd>Fireworks<div class="status"><span class="col3"></span></div></dd>
+					<dd>InDesign<div class="status"><span class="col6"></span></div></dd>
+					<dd>Balsamiq<div class="status"><span class="col5"></span></div></dd>
+					<dd>Pen &amp; Paper<div class="status"><span class="col7"></span></div></dd>
+			</dl>
+		</article>
+		<article class="col4 pull_left">
+			<h1>Experience</h1>
+			<dl>
+				<dt>Slinggit, llc</dt>
+					<dd>April 2012 - Present</dd>
+					<dd>Slinggit is a mobile application, web and iOS, for buying/selling items quickly and securely through social networks. As co-founder and VP of UX I worked closely with the team to design/development of a responsive fluid grid for the mobile first web app. Working with Phil Beadle, iOS developer, I designed a simple iOS UI with a focus on speed and usability. A constraint we placed for both web and native is keeping the app light weight this placed speed, usability and simplicity over rich graphics, transitions and animations.</dd>
+					<dd class="work-link"><a href="http://www.slinggit.com/" title="slinggit">slinggit.com</a></dd>
+				<dt>Pixorial, Inc</dt>
+				<dd>February 2012 - Present</dd>
+					<dd>Pixorial is a startup working to help you tell the stories in your videos. As a member of a small core product team I wear many hats from writing and moderating usability tests to creating wireframes and visual mocks to coding html, css, javascript and even some rails that goes into the production application. I have worked with the team to update legacy codeb to modern, standards based markup, refactor fixed layouts to be responsive across mobile devices, create modular, fluid layouts and update visuals as necessary with direction from the executive and marketing teams.</dd>
+					<dd class="work-link"><a href="http://www.pixorial.com/" title="pixorial">pixorial.com</a></dd>
+				<dt>Vail Resorts</dt>
+					<dd>September 2010 - February 2012</dd>
+					<dd>I worked with internal and external clients including individual resorts, departments, agencies of record and executives to consept and create graphic assets for print, web and projection. Worked directly on various EpicMix elements including badges, ui elements for mobile and web, flash and static web banners and print collateral. Worked with UX team to create graphics and elements for Snow.com and affiliate web sites including KeystoneResort.com, SkiHeavenly.com and EpicPass.com.</dd>
+					<dd class="work-link"><a href="http://www.snow.com/" title="vail resorts">snow.com</a></dd>
+				<dt>SOS Outreach/Americorps VISTA</dt>
+					<dd>April 2007 - June 2008 &amp; June 2009 - June 2010</dd>
+					<dd>I did 2 years on an Americorps VISTA grant/contract for SOS Outreach, a leadership development organization for youth that utilizes outdoor and adventure activities such as snowboarding, rock climbing and camping. I first joined SOS when it was still Snowboard Outreach Society and I was living in Breckenridge as a snowboard bum/janitor looking to get involved in something more meaningful. I ended up joining fulltime through Americorps to help establish and manage Front Range and then National youth programs as well as manage basic web/email design and development work with HTML/CSS.</dd>
+					<dd class="work-link"><a href="http://www.sosoutreach.org/" title="sos outreach">sosoutreach.org</a></dd>
+				<dt>Self Employed</dt>
+					<dd>June 2009 - Present</dd>
+					<dd>As a cross discipline designer/developer I have been hired by individuals and small businesses to design logos and collateral, develop marketing and ecommerce websites, and conduct user research.</dd>
+				<dt>City and County of Denver</dt>
+					<dd>June 2008 - June 2009</dd>
+					<dd>I was a case manager on the Employment First team in the Office of Economic Development. I met with ~200 people a month who were receiving food assistance to help them with their job search as part of the Welfare Reform Act. I worked directly with State and Local government and non-governmental organizations to report status and allocate resources for people on government aid.</dd>
+			</dl>
+		</article>
+		<article class="col4 pull_right">
+			<h1>Education</h1>
+			<dl>
+				<dt>George Mason University</dt>
+					<dd>Fairfax, VA</dd>
+					<dd>August 2002 - May 2007</dd>
+					<dd>Bachelor of Arts in Conflict Analysis and Resolution</dd>
+					<dd>I was part of the inaugural undergraduate class to earn a BA in Conflict Analysis and Resolution with an emphasis in International Conflict. This new program adapted from one of the country's top graduate level programs in the field allowed me to take undergraduate and graduate level courses in Anthropology, Sociology, Pyschology, Politics, Religion and Communications. What I got out of this degree is the ability to facilitate dialogue, objectively research and analyze controversial topics and the power framing a narrative can have on influence.</dd>
+				<dt>Rocky Mountain College of Art and Design</dt>
+					<dd>January 2009 - December 2009</dd>
+					<dd>Web Design Certificate</dd>
+					<dd>I enrolled in RMCAD to follow a passion for creating and a challenge to make a career change from public service to the design and technology industry. I signed up for 3 evening classes spring, summer and fall semesters to learn tools like Adobe CS and skills like CSS combined with my Denver Public Library card. I still feel like this was one of the best investments I have ever made as the foundation I got at RMCAD has helped me further my own learning objectives.</dd>
+			</dl>
+		</article>
+	</section>
+<!-- END RESUME -->
+<!-- WORK -->
 	<section class="row" id="work">
+		<h1>Work Samples</h1>
 		<article id="work-1">
 			<h1 class="border-bottom">Slinggit</h1>
 			<ul class="row work-thumbnails">
@@ -100,9 +173,9 @@
 		<article id="work-2">
 			<h1 class="border-bottom">Pixorial</h1>
 			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+				<li class="sml pull_left"><img src="assets/images/work/pixorial/work_pixorial_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/pixorial/work_pixorial_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/pixorial/work_pixorial_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
 			</ul>
 			<dl class="row">
 				<dt>Role:</dt>
@@ -117,9 +190,9 @@
 		<article id="work-3">
 			<h1 class="border-bottom">Air Supremacy</h1>
 			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+				<li class="sml pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
 			</ul>
 			<dl class="row">
 				<dt>Role:</dt>
@@ -134,9 +207,9 @@
 		<article id="work-4">
 			<h1 class="border-bottom">Streamline Engineering</h1>
 			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+				<li class="sml pull_left"><img src="assets/images/work/streamline/work_streamline_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="med pull_left"><img src="assets/images/work/streamline/work_streamline_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="lrg pull_left"><img src="assets/images/work/streamline/work_streamline_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
 			</ul>
 			<dl class="row">
 				<dt>Role:</dt>
@@ -151,9 +224,9 @@
 		<article id="work-5">
 			<h1 class="border-bottom">SimplBrew</h1>
 			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
+				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_settings_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
+				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_login_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
+				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_brew_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
 			</ul>
 			<dl class="row">
 				<dt>Role:</dt>
@@ -164,37 +237,39 @@
 					<dd>A mobile app for iOS and web, for recreational/novice homebrewers featuring simple ingredient lists, brew tracking, calendar and timer.</dd>
 			</dl>
 		</article>
-
-		<article id="work-6">
-			<h1 class="border-bottom">Nomabi</h1>
-			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>UI/UX, HTML/HAML, SASS/CSS</dd>
-				<dt>Dates:</dt>
-					<dd>August 2012</dd>
-				<dt>Meta:</dt>
-					<dd>For an AT&amp;T Mobile Hackathon in Denver our team of 6 concepted an app that would allow designers/developers to connect in physical spaces to co-work. Originally designed as a native iOS app we rapidly built a responsive web app when we ran into issues with several of the apis in iOS. Used the FullContact, MapQuest, GitHub and At&amp;T apis.</dd>
-			</dl>
-		</article>
 	</section>
 <!-- END WORK -->
+<!-- BLOG -->
+	<section class="row" id="blog">
+		<h1>Blog</h1>
+		<p>Coming Soon</p>
+	</section>
+<!-- END BLOG -->
+<!-- SOCIAL -->
+	<section class="row" id="contact">
+		<h1>Contact</h1>
+		<ul>
+			<li><a href="http://twitter.com/chasecourington" title="twitter"><span class=" ss-social-circle ss-twitter"></span>twitter</a></li>
+			<li><a href="http://www.linkedin.com/in/chasecourington" title="linked in"><span class="ss-social-circle ss-linkedin"></span>linkedin</a></li>
+			<li><a href="http://dribbble.com/chase" title="dribbble"><span class=" ss-social-circle ss-dribbble"></span>dribbble</a></li>
+			<li><a href="https://github.com/courington" title="github"><span class="ss-social-circle ss-octocat"></span>github</a></li>
+			<li><a href="mailto:get@chasecourington.com" title="email"><span class="ss-social-circle ss-mail"></span>get@chasecourington.com</a></li>
+		</ul>
+	</section>
+<!-- END SOCIAL -->
 </div>
 <!-- END MAIN CONTENT WRAPPER -->
+<!-- PAGE FOOT -->
 	<footer class="row">
 		<ul>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linked in">linkedin</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
 			<li class="pull_right ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
-			<li class="pull_left ss-icon ss-standard">navigateup</li>
+			<li class="pull_left ss-icon ss-standard"><a href="#about">navigateup</a></li>
 		</ul>
 		<small>&copy;2012 Chase Courington <span>Handcrafted in Denver, CO</span></small>
 	</footer>
-
+<!-- END PAGE FOOT -->
 </body>
 </html>

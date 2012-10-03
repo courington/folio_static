@@ -1,32 +1,20 @@
 /*
-Syntax error: Undefined mixin 'aside'.
-        on line 4 of sass/about.scss, in `aside'
-        from line 4 of sass/about.scss
+Syntax error: Undefined variable: "$light-grey".
+        on line 2 of sass/about.scss
 
 1: #about {
-2: 	figure {
-3: 		max-width: 12em;
-4: 		@include aside;
-5: 		figcaption {
-6: 			@include smallFont;
-7: 			span {
-8: 				display: block;
-9: 				@include smallFont;
+2: 	background: $light-grey;
+3: 	figure {
+4: 		max-width: 12em;
+5: 		@include aside;
+6: 		figcaption {
+7: 			@include smallFont;
 
 Backtrace:
-sass/about.scss:4:in `aside'
-sass/about.scss:4
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
+sass/about.scss:2
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/variable.rb:49:in `_perform'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/node.rb:40:in `perform'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -77,4 +65,4 @@ sass/about.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'aside'.\A         on line 4 of sass/about.scss, in `aside'\A         from line 4 of sass/about.scss\A \A 1: #about {\A 2: 	figure {\A 3: 		max-width: 12em;\A 4: 		@include aside;\A 5: 		figcaption {\A 6: 			@include smallFont;\A 7: 			span {\A 8: 				display: block;\A 9: 				@include smallFont;"; }
+  content: "Syntax error: Undefined variable: \"$light-grey\".\A         on line 2 of sass/about.scss\A \A 1: #about {\A 2: 	background: $light-grey;\A 3: 	figure {\A 4: 		max-width: 12em;\A 5: 		@include aside;\A 6: 		figcaption {\A 7: 			@include smallFont;"; }

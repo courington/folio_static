@@ -1,0 +1,50 @@
+#resume {
+	background: lighten($light-grey, 5%);
+	header,
+	article {
+		@include padding;
+		h1, h2, h3, li {
+			@include fontSize;
+		}
+		h1 {
+			border-bottom: 1px solid $grey;
+			font-weight: 600;
+		}
+	}
+	dd {
+		padding: 0 .5em;
+		font-weight: 300;
+		//@include smallFont;
+		.no-js {
+			.status {
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.status {
+			background: rgba($black, .05);
+			border: 1px solid rgba($black, .06);
+			box-shadow: 0 1px 1px rgba($white, .35), inset 0 1px 1px rgba($black, .15);
+			border-radius: 15px;
+			padding: .15em .35em;
+			span {
+				height: 0.79em;
+				background: $blue;
+				border: 1px solid darken($blue, 10%);
+				box-shadow: inset 0 1px 2px rgba($white, .25), 0 2px 1px rgba($black, .15);
+				border-radius: 6px;
+			}
+			
+		}
+		a {
+			color: $blue;
+		}
+	}
+	@media screen and (max-width: 42.5em) {
+		&> .col4[class*="pull_"] {
+			float: none;
+			width: 100%;
+			display: block;
+		}
+	}
+}
