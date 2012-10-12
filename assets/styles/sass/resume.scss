@@ -1,5 +1,4 @@
 #resume {
-	background: lighten($light-grey, 5%);
 	header,
 	article {
 		@include padding;
@@ -7,9 +6,11 @@
 			@include fontSize;
 		}
 		h1 {
-			border-bottom: 1px solid $grey;
 			font-weight: 600;
 		}
+	}	
+	dt {
+		margin-top: .825em;
 	}
 	dd {
 		padding: 0 .5em;
@@ -40,11 +41,16 @@
 			color: $blue;
 		}
 	}
-	@media screen and (max-width: 42.5em) {
-		&> .col4[class*="pull_"] {
-			float: none;
-			width: 100%;
-			display: block;
-		}
+	.hide {
+		display: none;
+	}
+	.ss-standard.ss-dropdown,
+	.ss-standard.ss-directup {
+		color: $white;
+		background: $dark-grey;
+		width: auto;
+		padding: .5em .25em .25em;
+		margin-top: -2.531em;
+		@include round-corners;
 	}
 }

@@ -75,7 +75,6 @@ h3 {
   font-size: 2.667em; }
 
 h4,
-section > article > h1,
 hgroup > h1,
 .wrapper > nav li {
   font-size: 2.531em; }
@@ -86,6 +85,7 @@ hgroup > h1 + h2 {
 
 h6,
 section > [class*="col"] > h1,
+section > article > h1,
 hgroup > h1 + h2 + h3 {
   font-size: 1.688em; }
 
@@ -106,7 +106,8 @@ body {
   overflow-x: hidden; }
 
 .wrapper {
-  color: #3f3f3f; }
+  color: #3f3f3f;
+  width: 100%; }
 
 [class*="pull"] {
   display: inline-block; }
@@ -174,10 +175,17 @@ body {
 .offset1 {
   margin-left: 12.5%; }
 
-body section > h1 {
-  font-size: 1.688em; }
-body .wrapper [class*="ss-"] {
-  margin: 0 .5em 0 0; }
+body .wrapper {
+  background: #f8f8f8; }
+  body .wrapper [class*="ss-"] {
+    margin: 0 .5em 0 0; }
+  body .wrapper > section {
+    max-width: 86em; }
+
+.border-bottom {
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: .25em;
+  padding-bottom: .125em; }
 
 body {
   background: #3f3f3f; }
@@ -198,21 +206,14 @@ body {
     body > footer small span {
       display: block; }
 
-[role="navigation"] {
-  background: #3f3f3f;
-  color: #bfbfbf; }
-  [role="navigation"] li ul {
-    font-size: 0.79em;
-    line-height: 1.5;
-    font-weight: 300;
-    padding-left: 12.5%; }
-  [role="navigation"] .border-bottom {
-    border-bottom: 1px solid #7f7f7f; }
-
-[role="navigation"],
 [role="main"],
+[role="navigation"],
 [role="complementary"] {
-  width: 100%; }
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transition: ease all .2s;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s; }
 
 .js [role="navigation"] {
   margin-left: -100%;
@@ -250,96 +251,107 @@ body {
 .hide {
   display: none; }
 
-#about {
-  background: #bfbfbf; }
-  #about figure {
-    max-width: 12em;
-    padding: .25em;
-    background: #d9d9d9;
-    border-radius: 3px;
-    border: 1px solid #999999; }
-    #about figure figcaption {
-      font-size: 0.79em;
-      line-height: 1.5;
-      font-weight: 300; }
-      #about figure figcaption span {
-        display: block;
-        font-size: 0.79em;
-        line-height: 1.5;
-        font-weight: 300; }
+[role="navigation"] {
+  background: #3f3f3f;
+  color: #bfbfbf; }
+  [role="navigation"] li ul {
+    font-size: 0.79em;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-left: 12.5%; }
+  [role="navigation"] .border-bottom {
+    border-bottom: 1px solid #7f7f7f; }
 
-#resume {
-  background: #cccccc; }
-  #resume header,
-  #resume article {
-    padding: .25em; }
-    #resume header h1, #resume header h2, #resume header h3, #resume header li,
-    #resume article h1,
-    #resume article h2,
-    #resume article h3,
-    #resume article li {
-      font-size: 1.125em;
-      line-height: 1.5;
-      font-weight: 300; }
-    #resume header h1,
-    #resume article h1 {
-      border-bottom: 1px solid #7f7f7f;
-      font-weight: 600; }
-  #resume dd {
-    padding: 0 .5em;
+#about p {
+  margin-bottom: 1.688em; }
+  #about p a {
+    text-decoration: underline; }
+#about > [class*="row"],
+#about > [class*="col"] p {
+  max-width: 54.75em; }
+#about figure {
+  max-width: 22em;
+  margin-left: .75em; }
+  #about figure figcaption {
+    font-size: 0.79em;
+    line-height: 1.5;
     font-weight: 300; }
-    #resume dd .no-js .status {
-      background: transparent;
-      box-shadow: none; }
-    #resume dd .status {
-      background: rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      box-shadow: 0 1px 1px rgba(255, 255, 255, 0.35), inset 0 1px 1px rgba(0, 0, 0, 0.15);
-      border-radius: 15px;
-      padding: .15em .35em; }
-      #resume dd .status span {
-        height: 0.79em;
-        background: #4885be;
-        border: 1px solid #376b9c;
-        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.25), 0 2px 1px rgba(0, 0, 0, 0.15);
-        border-radius: 6px; }
-    #resume dd a {
-      color: #4885be; }
-  @media screen and (max-width: 42.5em) {
-    #resume > .col4[class*="pull_"] {
-      float: none;
-      width: 100%;
-      display: block; } }
+#about li {
+  text-align: center;
+  font-size: 2.531em;
+  line-height: 1.25;
+  margin: 0 3.5%; }
 
-#work {
-  background: #d8d8d8; }
-  #work dl {
+#resume header,
+#resume article {
+  padding: .25em; }
+  #resume header h1, #resume header h2, #resume header h3, #resume header li,
+  #resume article h1,
+  #resume article h2,
+  #resume article h3,
+  #resume article li {
     font-size: 1.125em;
     line-height: 1.5;
     font-weight: 300; }
-  #work .work-thumbnails li {
-    margin: 0 2.125%; }
-    #work .work-thumbnails li:first-child {
-      margin-left: 0; }
-    #work .work-thumbnails li:last-child {
-      margin-right: 0; }
-    #work .work-thumbnails li img {
-      box-shadow: 0 2px 2px 1px rgba(0, 0, 10, 0.2); }
-  #work .work-thumbnails .sml {
-    width: 15.2%;
-    max-width: 5.125em; }
-  #work .work-thumbnails .med {
-    width: 29.2%;
-    max-width: 9.925em; }
-  #work .work-thumbnails .lrg {
-    width: 47%;
-    max-width: 15.938em; }
+  #resume header h1,
+  #resume article h1 {
+    font-weight: 600; }
+#resume dt {
+  margin-top: .825em; }
+#resume dd {
+  padding: 0 .5em;
+  font-weight: 300; }
+  #resume dd .no-js .status {
+    background: transparent;
+    box-shadow: none; }
+  #resume dd .status {
+    background: rgba(8, 8, 10, 0.05);
+    border: 1px solid rgba(8, 8, 10, 0.06);
+    box-shadow: 0 1px 1px rgba(248, 248, 248, 0.35), inset 0 1px 1px rgba(8, 8, 10, 0.15);
+    border-radius: 15px;
+    padding: .15em .35em; }
+    #resume dd .status span {
+      height: 0.79em;
+      background: #4885be;
+      border: 1px solid #376b9c;
+      box-shadow: inset 0 1px 2px rgba(248, 248, 248, 0.25), 0 2px 1px rgba(8, 8, 10, 0.15);
+      border-radius: 6px; }
+  #resume dd a {
+    color: #4885be; }
+#resume .hide {
+  display: none; }
+#resume .ss-standard.ss-dropdown,
+#resume .ss-standard.ss-directup {
+  color: #f8f8f8;
+  background: #3f3f3f;
+  width: auto;
+  padding: .5em .25em .25em;
+  margin-top: -2.531em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+#work [id*="work-"] {
+  float: left;
+  display: inline-block;
+  width: 98%;
+  margin: .625em auto; }
+#work dt {
+  float: left;
+  display: inline-block;
+  margin-right: 0.79em; }
+#work dd {
+  font-weight: 300; }
+#work .work-thumbnails {
+  max-width: 60em; }
   #work .work-thumbnails .ios {
     width: 30%;
     max-width: 8.375em; }
 
-#blog {
-  background: #e5e5e5; }
-
-#contact {
-  background: #f2f2f2; }
+@media screen and (max-width: 42.5em) {
+  #resume > .col4[class*="pull_"] {
+    float: none;
+    width: 100%;
+    display: block; } }
+@media screen and (min-width: 31em) {
+  body .wrapper {
+    padding: 1.5em 10%; } }

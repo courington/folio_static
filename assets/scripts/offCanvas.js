@@ -47,15 +47,22 @@ var offCanvas = function(){
 }
 
 var hideResume = function(){
+	//$(window).load(function(){
+	//	$('#resume').addClass('hide');
+	//});
+	//$('.showResume').click(function(){
+	//	$('#resume').toggleClass('hide');
+	//});
 	$(window).load(function(){
-		$('#resume').addClass('hide');
-	});
-	$('.showResume').click(function(){
-		$('#resume').toggleClass('hide');
-	});
+		$(".job-duties").addClass("hide");
+		$("dd + .ss-standard").click(function(){
+			$(this).toggleClass("ss-dropdown").toggleClass("ss-directup");
+			$(this).next().toggleClass("hide");
+		});
+	})
 }
 
 $(document).ready(function(){
 	offCanvas();
-	//hideResume();
+	hideResume();
 })

@@ -11,12 +11,14 @@
 	<link href="assets/styles/compiled/index.css" media="all" rel="stylesheet" type="text/css">
 	<link href="assets/webfonts/ss-standard.css" media="all" rel="stylesheet" type="text/css">
 	<link href="assets/webfonts/ss-social.css" media="all" rel="stylesheet" type="text/css">
-
+<!-- SCRIPTS -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/modernizr.custom.82375.js"></script>
   	<script type="text/javascript" src="assets/webfonts/ss-standard.js"></script>
   	<script type="text/javascript" src="assets/webfonts/ss-social.js"></script>
 	<script type="text/javascript" src="assets/scripts/offCanvas.js"></script>
+<!-- END SCRIPTS -->
+<!-- Welcome! This was all thrown together fairly quickly and will continue to evolve and get better. Please let me know about bugs, I'm working through some now. Everything written by hand unless otherwise noted. @chasecourington -->
 </head>
 <body>
 <!-- TOP BAR -->
@@ -34,7 +36,7 @@
 <!-- END TOP BAR -->
 <!-- OFF CANVAS NAV -->
 <aside>
-	<nav class="row" role="navigation">
+	<nav class="row" role="navigation" id="navigation">
 		<ul>
 			<li class="border-bottom"><a href="#about">About Me</a></li>
 			<li class="border-bottom"><a href="#resume" class="showResume">Resume</a></li>
@@ -44,8 +46,9 @@
 					<li class="border-bottom"><a href="#work-2">Pixorial</a></li>
 					<li class="border-bottom"><a href="#work-3">Air Supremacy</a></li>
 					<li class="border-bottom"><a href="#work-4">Streamline</a></li>
-					<li class="border-bottom"><a href="#work-5">SimplBrew</a></li>
-					<!-- <li class="border-bottom"><a href="#work-6">Hack Denver</a></li> -->
+					<li class="border-bottom"><a href="#work-5">Slinggit iOS</a></li>
+					<li class="border-bottom"><a href="#work-6">Pixorial iOS</a></li>
+					<li class="border-bottom"><a href="#work-7">SimplBrew iOS</a></li>
 				</ul>
 			</li>
 			<li class="border-bottom"><a href="#blog">Blog</a></li>
@@ -61,24 +64,153 @@
 		<header class="row">
 			<h1>I am a designer who thinks in code.</h1>
 		</header>
-		<!-- <figure class="col2 pull_right">
-			<img src="assets/images/portrait_aspenHike_240x320.jpg" height="auto" width="100%" title="Self Portrait of Chase hiking Conundrum Creek" alt="Self Portrait of Chase" />
-			<figcaption>
-				Hiking Conundrum Creek trail near Aspen.<span>August 2012</span>
-			</figcaption>
-		</figure> -->
-		<article class="col8 pull_left">
-			<p>I am a UX Designer living in Denver, CO who geeks out over web standards, accessibility and mobile technology. I wear many hats including researcher, tester, front end developer, visual designer and co-founder. I can be found exploring the rocky mountains, expanding my mind on <a href="http://www.coursera.com/" title="Coursera free online classes">Coursera</a>, enjoying a craft beer and relaxing with family and friends.</p>
+		<article class="pull_left">
+			<figure class="pull_right col3">
+				<img src="assets/images/hero_lumberJack_420x420.jpg" height="auto" width="100%" title="hero image of chase" alt="chase next to a wooden lumberjack in south fork, co" />
+				<figcaption class="border-bottom" >Posing with a lumberjack in South Fork, CO <small>August 2012</small></figcaption>
+			</figure>
+			<p>I design for the user and build interfaces for the web and mobile devices in Denver, CO. Being a part of small teams I am used to wearing many hats from researcher and strategist to coder and illustrator. "Do more with less" is something that I always strive for; in my code this is keeping it light and clean, in design it's focusing on the message without superflous elements and in teams it's owning the work.</p>
+			<p>When I'm not working on projects I can be found exploring the rocky mountains, expanding my mind on <a href="http://www.coursera.com/" title="Coursera free online classes">Coursera</a>, enjoying a craft beer, attending or organizing local tech startup events (<a href="http://www.meetup.com/denver-mobile-device-lab" title="Denver Mobile Lab meetup">Denver Mobile Lab</a>) and relaxing with my wife, family and friends.</p>
+			<p>I love to talk with people about mobile web, responsive web design/development and web standards. Also beer and stuff in the mountains like hiking and snowboarding. Let's chat.</p>
+			<ul class="row">
+				<li class="pull_left ss-icon ss-social-circle"><a href="http://twitter.com/chasecourington" title="twitter">twitter</a></li>
+				<li class="pull_left ss-icon ss-social-circle"><a href="http://www.linkedin.com/in/chasecourington" title="linkedin">linkedin</a></li>
+				<li class="pull_left ss-icon ss-social-circle"><a href="http://dribbble.com/chase" title="dribbble">dribbble</a></li>
+				<li class="pull_left ss-icon ss-social-circle"><a href="https://github.com/courington" title="github">octocat</a></li>
+				<li class="pull_left ss-icon ss-social-circle"><a href="mailto:get@chasecourington.com" title="email">mail</a></li>
+			</ul>
 		</article>
 	</section>
 <!-- END ABOUT -->
+<!-- WORK -->
+	<section class="row border-bottom" id="work">
+		<h1>Work Samples</h1>
+		<article id="work-1">
+			<h1 class="border-bottom">Slinggit</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/slinggit/work_slinggit_960x446.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>Co-Founder, UI/UX, HTML, SASS, jQuery, Rails</dd>
+				<dt>Dates:</dt>
+					<dd>April 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>Responsive web app designed with emphasis on speed and low footprint. iOS user interface. http://www.slinggit.com</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://www.slinggit.com/" title="slinggit">slinggit.com</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-2">
+			<h1 class="border-bottom">Pixorial</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/pixorial/work_pixorial_960x446.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX, HTML, CSS/SASS, jQuery, Rails</dd>
+				<dt>Dates:</dt>
+					<dd>February 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>Design and Front End Development for a small startup building a cloud storage, video editing and sharing application. I do things like write/moderate usability tests, wireframe, design visual elements, build prototypes to test and write product HTML, CSS and JS.</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://www.pixorial.com/" title="pixorial">pixorial.com</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-3">
+			<h1 class="border-bottom">Air Supremacy</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/air-supremacy/work_air-supremacy_960x446.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX, HTML, CSS, jQuery</dd>
+				<dt>Dates:</dt>
+					<dd>June 2012</dd>
+				<dt>Meta:</dt>
+					<dd>Work with Air Supremacy to move e-commerce hosting to Big Cartel platform and design 'mobile first' custom theme.</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://www.air-supremacy.com/" title="air supremacy">air-supremacy.com</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-4">
+			<h1 class="border-bottom">Streamline Engineering</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/streamline/work_streamline_960x446.jpg" title="Streamline Engineering responsive website" alt="screen shot of streamline-engineering.com" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI, HTML, CSS, jQuery</dd>
+				<dt>Dates:</dt>
+					<dd>December 2011</dd>
+				<dt>Meta:</dt>
+					<dd>Work with Dominic Aiello to brand, design and develop the web pressence for his mechanical engineering consultancy, Streamline Engineering.</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://www.streamline-engineering.com/" title="streamline engineering">streamline-engineering.com</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-5">
+			<h1 class="border-bottom">Slinggit iOS</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/slinggit/work_slinggit_ios_960x446.jpg" title="Slinggit iOS app mocks" alt="mocks of slinggit ios app" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX/IxD</dd>
+				<dt>Dates:</dt>
+					<dd>April 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>I work directly with Slinggit iOS developer/co-founder to design intuitive interactions based on user feedback, prototyping and mobile/iOS design patterns as well as visual assets.</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://itunes.apple.com/us/app/slinggit/id543458895?mt=8" title="pixorial ios app">Pixorial iOS app store listing</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-6">
+			<h1 class="border-bottom">Pixorial iOS</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/pixorial/work_pixorial_ios_960x446.jpg" title="Pixorial iOS app" alt="screen shot of pixoiral ios app" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX/IxD</dd>
+				<dt>Dates:</dt>
+					<dd>February 2012 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>I work directly with the Pixorial iOS developer to design intuitive interactions and visual assets for the native video capture app for iOS based off user research, mobile design patterns and rapid prototyping.</dd>
+				<dt>URL:</dt>
+					<dd><a href="http://itunes.apple.com/us/app/pixorial/id437921208?mt=8" title="pixorial ios app">Pixorial iOS app store listing</a></dd>
+			</dl>
+		</article>
+
+		<article id="work-7">
+			<h1 class="border-bottom">SimplBrew</h1>
+			<div class="work-thumbnails">
+				<img src="assets/images/work/simplbrew/work_simplbrew_ios_960x446.jpg" title="SimplBrew ios ui mocks" alt="ui mocks for simplbrew ios app" height="auto" width="100%" />
+			</div>
+			<dl class="row">
+				<dt>Role:</dt>
+					<dd>UI/UX</dd>
+				<dt>Dates:</dt>
+					<dd>November 2011 - Present</dd>
+				<dt>Meta:</dt>
+					<dd>A iOS app for recreational/novice homebrewers featuring simple ingredient lists, brew tracking, calendar and timer. This has yet to be developed.</dd>
+			</dl>
+		</article>
+	</section>
+<!-- END WORK -->
 <!-- RESUME -->
-	<section class="row" id="resume">
+	<section class="row border-bottom" id="resume">
 		<h1>Resume</h1>
+		<a href="assets/resume-10-2012.pdf" title="downloadable resume" class="row"><span class="ss-icon ss-standard">file</span>Downloadable Resume</a>
 		<header class="col4 pull_left vcard">
 			<hgroup>
-				<h1 class="fn">Chase Courington</h1>
-				<h2>UX/UI Design &amp; Development</h2>
+				<h1 class="fn border-bottom">Chase Courington</h1>
+				<h2>UX Design &amp; UI Development</h2>
 				<h3 class="adr region">Denver, CO</h3>
 			</hgroup>
 			<ul>
@@ -89,8 +221,9 @@
 			</ul>
 		</header>
 		<article class="col4 pull_right">
-			<h1>Skills</h1>
+			<h1 class="border-bottom">Skills</h1>
 			<dl>
+				<div class="col4 pull_left">
 				<dt>Web Development</dt>
 					<dd>HTML(5)<div class="status"><span class="col7"></span></div></dd>
 					<dd>CSS/SASS<div class="status"><span class="col7"></span></div></dd>
@@ -98,6 +231,8 @@
 					<dd>Javascript<div class="status"><span class="col2"></span></div></dd>
 					<dd>Rails<div class="status"><span class="col2"></span></div></dd>
 					<dd>PHP<div class="status"><span class="col1"></span></div></dd>
+				</div>
+				<div class="col4 pull_left">
 				<dt>Design</dt>
 					<dd>Photoshop<div class="status"><span class="col7"></span></div></dd>
 					<dd>Illustrator<div class="status"><span class="col7"></span></div></dd>
@@ -105,142 +240,60 @@
 					<dd>InDesign<div class="status"><span class="col6"></span></div></dd>
 					<dd>Balsamiq<div class="status"><span class="col5"></span></div></dd>
 					<dd>Pen &amp; Paper<div class="status"><span class="col7"></span></div></dd>
+				</div>
 			</dl>
 		</article>
 		<article class="col4 pull_left">
-			<h1>Experience</h1>
+			<h1 class="border-bottom">Experience</h1>
 			<dl>
-				<dt>Slinggit, llc</dt>
+				<dt><a href="http://www.slinggit.com/" title="slinggit">Slinggit, llc</a></dt>
 					<dd>April 2012 - Present</dd>
-					<dd>Slinggit is a mobile application, web and iOS, for buying/selling items quickly and securely through social networks. As co-founder and VP of UX I worked closely with the team to design/development of a responsive fluid grid for the mobile first web app. Working with Phil Beadle, iOS developer, I designed a simple iOS UI with a focus on speed and usability. A constraint we placed for both web and native is keeping the app light weight this placed speed, usability and simplicity over rich graphics, transitions and animations.</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Slinggit is a native iOS and responsive web application allowing users to quickly sell items through their Facebook and Twitter accounts. As a co-founder I focus on the usability of the application across web and native platforms with a passion for the mobile experience and get my hands dirty with the media queries, sass and even some jquery and rails. Being a team of 4 I have direct roll in the information architecture, interaction design, visual design and front-end code.</dd>
 					<dd class="work-link"><a href="http://www.slinggit.com/" title="slinggit">slinggit.com</a></dd>
 				<dt>Pixorial, Inc</dt>
-				<dd>February 2012 - Present</dd>
-					<dd>Pixorial is a startup working to help you tell the stories in your videos. As a member of a small core product team I wear many hats from writing and moderating usability tests to creating wireframes and visual mocks to coding html, css, javascript and even some rails that goes into the production application. I have worked with the team to update legacy codeb to modern, standards based markup, refactor fixed layouts to be responsive across mobile devices, create modular, fluid layouts and update visuals as necessary with direction from the executive and marketing teams.</dd>
+					<dd>February 2012 - Present</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Pixorial helps you tell the stories in your videos. As a member of a small startup I wear many hats from designing and moderating usability tests to wireframing and coding html, css, javascript and even some rails. When I joined the Pixorial the DOM was littered with deprecated elements and the front-end was heavy and slow. I have worked to refactor code to use semantic HTML5 elements, reduce HTTP requests with CSS3 and design with progressive enhancement using tools like Modernizr and concepts like mobile-first design/development. I also work closely with a native iOS/Android developer to design interactions and visual assets for native applications ranging from iPhone to Google TV.</dd>
 					<dd class="work-link"><a href="http://www.pixorial.com/" title="pixorial">pixorial.com</a></dd>
-				<dt>Vail Resorts</dt>
+				<dt>Vail Resorts Management Company</dt>
 					<dd>September 2010 - February 2012</dd>
-					<dd>I worked with internal and external clients including individual resorts, departments, agencies of record and executives to consept and create graphic assets for print, web and projection. Worked directly on various EpicMix elements including badges, ui elements for mobile and web, flash and static web banners and print collateral. Worked with UX team to create graphics and elements for Snow.com and affiliate web sites including KeystoneResort.com, SkiHeavenly.com and EpicPass.com.</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Graphic Designer for the corporate marketing department responsible for visual asset creation and management across all brands in the Vail Resorts' portfolio. Worked with internal customers ranging from the Executive Committee to resort marketing departments to deliver visual assets for print, web and broadcast. Worked with external agencies BBDO, Spin Creative Studio and Sapient Nitro on EpicMix, Epic Pass and other projects for web and print.</dd>
 					<dd class="work-link"><a href="http://www.snow.com/" title="vail resorts">snow.com</a></dd>
 				<dt>SOS Outreach/Americorps VISTA</dt>
 					<dd>April 2007 - June 2008 &amp; June 2009 - June 2010</dd>
-					<dd>I did 2 years on an Americorps VISTA grant/contract for SOS Outreach, a leadership development organization for youth that utilizes outdoor and adventure activities such as snowboarding, rock climbing and camping. I first joined SOS when it was still Snowboard Outreach Society and I was living in Breckenridge as a snowboard bum/janitor looking to get involved in something more meaningful. I ended up joining fulltime through Americorps to help establish and manage Front Range and then National youth programs as well as manage basic web/email design and development work with HTML/CSS.</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Americorps VISTA for 2 contracts with SOS Outreach managing programs in Colorado and at 13 locations nationwide. I performed duties including volunteer training, contract negotiation and design/development for print and web for a non-profit organization with less than 15 employees. Built HTML email templates and custom theme for Ning.com powered social networking website.</dd>
 					<dd class="work-link"><a href="http://www.sosoutreach.org/" title="sos outreach">sosoutreach.org</a></dd>
-				<dt>Self Employed</dt>
+				<dt>Chase Courington Design &amp; Development</dt>
 					<dd>June 2009 - Present</dd>
-					<dd>As a cross discipline designer/developer I have been hired by individuals and small businesses to design logos and collateral, develop marketing and ecommerce websites, and conduct user research.</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Print and web design and development for small businesses including Grand Photobooth Company, Streamline Engineering, Air Supremacy.</dd>
+					<dd class="work-link">See work for links</dd>
 				<dt>City and County of Denver</dt>
 					<dd>June 2008 - June 2009</dd>
-					<dd>I was a case manager on the Employment First team in the Office of Economic Development. I met with ~200 people a month who were receiving food assistance to help them with their job search as part of the Welfare Reform Act. I worked directly with State and Local government and non-governmental organizations to report status and allocate resources for people on government aid.</dd>
+					<div class="ss-standard ss-dropdown pull_right"></div>
+					<dd class="job-duties">Case Manager in Denver Employment First, a team in the Denver Office of Economic Development operating job search and training programs for food stamp recipients for Colorado Department of Human Services.</dd>
+					<dd class="work-link"><a href="http://www.colorado.gov/cs/Satellite/CDHS-SelfSuff/CBON/1251581773899" title="cdhs listing for employment first">colorado.gov</a></dd>
 			</dl>
 		</article>
 		<article class="col4 pull_right">
-			<h1>Education</h1>
+			<h1 class="border-bottom">Education</h1>
 			<dl>
 				<dt>George Mason University</dt>
 					<dd>Fairfax, VA</dd>
 					<dd>August 2002 - May 2007</dd>
-					<dd>Bachelor of Arts in Conflict Analysis and Resolution</dd>
-					<dd>I was part of the inaugural undergraduate class to earn a BA in Conflict Analysis and Resolution with an emphasis in International Conflict. This new program adapted from one of the country's top graduate level programs in the field allowed me to take undergraduate and graduate level courses in Anthropology, Sociology, Pyschology, Politics, Religion and Communications. What I got out of this degree is the ability to facilitate dialogue, objectively research and analyze controversial topics and the power framing a narrative can have on influence.</dd>
+					<dd>BA in Conflict Analysis and Resolution</dd>
 				<dt>Rocky Mountain College of Art and Design</dt>
 					<dd>January 2009 - December 2009</dd>
 					<dd>Web Design Certificate</dd>
-					<dd>I enrolled in RMCAD to follow a passion for creating and a challenge to make a career change from public service to the design and technology industry. I signed up for 3 evening classes spring, summer and fall semesters to learn tools like Adobe CS and skills like CSS combined with my Denver Public Library card. I still feel like this was one of the best investments I have ever made as the foundation I got at RMCAD has helped me further my own learning objectives.</dd>
 			</dl>
 		</article>
 	</section>
 <!-- END RESUME -->
-<!-- WORK -->
-	<section class="row" id="work">
-		<h1>Work Samples</h1>
-		<article id="work-1">
-			<h1 class="border-bottom">Slinggit</h1>
-			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/slinggit/work_slinggit_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/slinggit/work_slinggit_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/slinggit/work_slinggit_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>Co-Founder, UI/UX, HTML, SASS, jQuery, Rails</dd>
-				<dt>Dates:</dt>
-					<dd>April 2012 - Present</dd>
-				<dt>Meta:</dt>
-					<dd>Responsive web app designed with emphasis on speed and low footprint. iOS user interface. http://www.slinggit.com</dd>
-			</dl>
-		</article>
-
-		<article id="work-2">
-			<h1 class="border-bottom">Pixorial</h1>
-			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/pixorial/work_pixorial_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/pixorial/work_pixorial_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/pixorial/work_pixorial_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>UI/UX, HTML, CSS/SASS, jQuery, Rails</dd>
-				<dt>Dates:</dt>
-					<dd>February 2012 - Present</dd>
-				<dt>Meta:</dt>
-					<dd>Design and Front End Development for a small startup building a cloud storage, video editing and sharing application. I do things like write/moderate usability tests, wireframe, design visual elements, build prototypes to test and write product HTML, CSS and JS.</dd>
-			</dl>
-		</article>
-
-		<article id="work-3">
-			<h1 class="border-bottom">Air Supremacy</h1>
-			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/air-supremacy/work_air-supremacy_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>UI/UX, HTML, CSS, jQuery</dd>
-				<dt>Dates:</dt>
-					<dd>June 2012</dd>
-				<dt>Meta:</dt>
-					<dd>Work with Air Supremacy to move e-commerce hosting to Big Cartel platform and design 'mobile first' custom theme.</dd>
-			</dl>
-		</article>
-
-		<article id="work-4">
-			<h1 class="border-bottom">Streamline Engineering</h1>
-			<ul class="row work-thumbnails">
-				<li class="sml pull_left"><img src="assets/images/work/streamline/work_streamline_sml_93x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="med pull_left"><img src="assets/images/work/streamline/work_streamline_med_179x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="lrg pull_left"><img src="assets/images/work/streamline/work_streamline_lrg_287x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>UI, HTML, CSS, jQuery</dd>
-				<dt>Dates:</dt>
-					<dd>December 2011</dd>
-				<dt>Meta:</dt>
-					<dd>Work with Dominic Aiello to brand, design and develop the web pressence for his mechanical engineering consultancy, Streamline Engineering.</dd>
-			</dl>
-		</article>
-
-		<article id="work-5">
-			<h1 class="border-bottom">SimplBrew</h1>
-			<ul class="row work-thumbnails">
-				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_settings_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for small screen" /></li>
-				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_login_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for medium screen" /></li>
-				<li class="ios pull_left"><img src="assets/images/work/simplbrew/work_simplbrew_ios_brew_200x300.jpg" title="Slinggit.com responsive web app" alt="screen shot of Slinggit.com for large screen" /></li>
-			</ul>
-			<dl class="row">
-				<dt>Role:</dt>
-					<dd>UI/UX</dd>
-				<dt>Dates:</dt>
-					<dd>November 2011 - Present</dd>
-				<dt>Meta:</dt>
-					<dd>A mobile app for iOS and web, for recreational/novice homebrewers featuring simple ingredient lists, brew tracking, calendar and timer.</dd>
-			</dl>
-		</article>
-	</section>
-<!-- END WORK -->
 <!-- BLOG -->
-	<section class="row" id="blog">
+	<section class="row border-bottom" id="blog">
 		<h1>Blog</h1>
 		<p>Coming Soon</p>
 	</section>

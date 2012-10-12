@@ -32,17 +32,3 @@ body {
 		}
 	}
 }
-
-[role="navigation"] {
-	background: $dark-grey;
-	color: $light-grey;
-	li {
-		ul {
-			@include smallFont;
-			padding-left: $cols;
-		}
-	}
-	.border-bottom {
-		border-bottom: 1px solid $grey;
-	}
-}

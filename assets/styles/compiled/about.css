@@ -1,20 +1,44 @@
 /*
-Syntax error: Undefined variable: "$light-grey".
-        on line 2 of sass/about.scss
+Syntax error: Undefined mixin 'smallFont'.
+        on line 16 of sass/about.scss, in `smallFont'
+        from line 16 of sass/about.scss
 
-1: #about {
-2: 	background: $light-grey;
-3: 	figure {
-4: 		max-width: 12em;
-5: 		@include aside;
-6: 		figcaption {
-7: 			@include smallFont;
+11: 	}
+12: 	figure {
+13: 		max-width: 22em;
+14: 		margin-left: .75em;
+15: 		figcaption {
+16: 			@include smallFont;
+17: 		}
+18: 	}
+19: 	li {
+20: 		text-align: center;
+21: 		@include bigFont;
 
 Backtrace:
-sass/about.scss:2
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/variable.rb:49:in `_perform'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/script/node.rb:40:in `perform'
-/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
+sass/about.scss:16:in `smallFont'
+sass/about.scss:16
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/Chase/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -65,4 +89,4 @@ sass/about.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light-grey\".\A         on line 2 of sass/about.scss\A \A 1: #about {\A 2: 	background: $light-grey;\A 3: 	figure {\A 4: 		max-width: 12em;\A 5: 		@include aside;\A 6: 		figcaption {\A 7: 			@include smallFont;"; }
+  content: "Syntax error: Undefined mixin 'smallFont'.\A         on line 16 of sass/about.scss, in `smallFont'\A         from line 16 of sass/about.scss\A \A 11: 	}\A 12: 	figure {\A 13: 		max-width: 22em;\A 14: 		margin-left: .75em;\A 15: 		figcaption {\A 16: 			@include smallFont;\A 17: 		}\A 18: 	}\A 19: 	li {\A 20: 		text-align: center;\A 21: 		@include bigFont;"; }

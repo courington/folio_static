@@ -1,0 +1,13 @@
+@media screen and (max-width: 42.5em) {
+	#resume > .col4[class*="pull_"] {
+		float: none;
+		width: 100%;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 31em) {
+	body .wrapper {
+		padding: 1.5em 10%;
+	}
+}

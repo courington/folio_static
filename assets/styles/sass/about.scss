@@ -1,14 +1,24 @@
 #about {
-	background: $light-grey;
+	p {
+		margin-bottom: 1.688em;
+		a {
+			text-decoration: underline;
+		}
+	}
+	> [class*="row"],
+	> [class*="col"] p {
+		max-width: 54.75em;
+	}
 	figure {
-		max-width: 12em;
-		@include aside;
+		max-width: 22em;
+		margin-left: .75em;
 		figcaption {
 			@include smallFont;
-			span {
-				display: block;
-				@include smallFont;
-			}
 		}
+	}
+	li {
+		text-align: center;
+		@include bigFont;
+		margin: 0 3.5%;
 	}
 }

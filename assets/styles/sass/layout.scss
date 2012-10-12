@@ -7,6 +7,10 @@
 	border-radius: 3px;
 	border: 1px solid darken($white, 40%);
 }
+@mixin round-corners {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
 html {
 	@include mainFont;
 }
@@ -15,6 +19,7 @@ body {
 }
 .wrapper {
 	color: $dark-grey;
+	width: 100%;
 }
 [class*="pull"] {
 	display: inline-block;
@@ -37,51 +42,51 @@ body {
 }
 //8 Column Grid
 $cols : (100% / 8);
-	.col8 {
-		width: ($cols * 8);
-	}
-	.col7 {
-		width: ($cols * 7);
-	}
-	.col6 {
-		width: ($cols * 6);
-	}
-	.col5 {
-		width: ($cols * 5);
-	}
-	.col4 {
-		width: ($cols * 4);
-	}
-	.col3 {
-		width: ($cols * 3);
-	}
-	.col2 {
-		width: ($cols * 2);
-	}
-	.col1 {
-		width: ($cols * 1);
-	}
-	.offset8 {
-		margin-left: ($cols * 8);
-	}
-	.offset7 {
-		margin-left: ($cols * 7);
-	}
-	.offset6 {
-		margin-left: ($cols * 6);
-	}
-	.offset5 {
-		margin-left: ($cols * 5);
-	}
-	.offset4 {
-		margin-left: ($cols * 4);
-	}
-	.offset3 {
-		margin-left: ($cols * 3);
-	}
-	.offset2 {
-		margin-left: ($cols * 2);
-	}
-	.offset1 {
-		margin-left: ($cols * 1);
-	}
+		.col8 {
+			width: ($cols * 8);
+		}
+		.col7 {
+			width: ($cols * 7);
+		}
+		.col6 {
+			width: ($cols * 6);
+		}
+		.col5 {
+			width: ($cols * 5);
+		}
+		.col4 {
+			width: ($cols * 4);
+		}
+		.col3 {
+			width: ($cols * 3);
+		}
+		.col2 {
+			width: ($cols * 2);
+		}
+		.col1 {
+			width: ($cols * 1);
+		}
+		.offset8 {
+			margin-left: ($cols * 8);
+		}
+		.offset7 {
+			margin-left: ($cols * 7);
+		}
+		.offset6 {
+			margin-left: ($cols * 6);
+		}
+		.offset5 {
+			margin-left: ($cols * 5);
+		}
+		.offset4 {
+			margin-left: ($cols * 4);
+		}
+		.offset3 {
+			margin-left: ($cols * 3);
+		}
+		.offset2 {
+			margin-left: ($cols * 2);
+		}
+		.offset1 {
+			margin-left: ($cols * 1);
+		}

@@ -1,11 +1,11 @@
-[role="navigation"],
 [role="main"],
-[role="complementary"] {
-	//-moz-transition: .2s all ease;	
-	//-webkit-transition: .2s all ease;
-	//transition: .2s all ease;			
+[role="navigation"],
+[role="complementary"] {	
 	width: 100%;
-	//padding: .25em 2.5%;
+	-webkit-transform: translateZ(0);
+	-moz-transition: ease all .2s;
+	-webkit-transition: ease all .2s;
+	transition: ease all .2s;
 }
 .js [role="navigation"] {	
 	margin-left: -100%;
@@ -42,4 +42,17 @@
 }
 .hide {
 	display: none;
+}
+[role="navigation"] {
+	background: $dark-grey;
+	color: $light-grey;
+	li {
+		ul {
+			@include smallFont;
+			padding-left: $cols;
+		}
+	}
+	.border-bottom {
+		border-bottom: 1px solid $grey;
+	}
 }
